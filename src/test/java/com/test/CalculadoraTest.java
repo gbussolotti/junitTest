@@ -42,7 +42,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testAdd() {
-        System.out.println("add");
+        System.out.println("addTest");
         int value1 = 5;
         int value2 = 5;
         Calculadora instance = new Calculadora();
