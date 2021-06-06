@@ -42,11 +42,11 @@ public class CalculadoraTest {
      */
     @Test
     public void testAdd() {
-        System.out.println("addTest");
+        System.out.println("add");
         int value1 = 5;
         int value2 = 5;
         Calculadora instance = new Calculadora();
-        int expResult = 11;
+        int expResult = 10;
         int result = instance.add(value1, value2);
         assertEquals(expResult, result);
     }

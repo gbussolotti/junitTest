@@ -18,6 +18,7 @@ import org.junit.rules.TemporaryFolder;
  */
 public class RuleTest {
     
+    //Tag Rule means that execute before test
     @Rule
     public TemporaryFolder folder = new TemporaryFolder();
     
