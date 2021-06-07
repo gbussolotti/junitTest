@@ -11,6 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.mockito.Mockito;
 
 /**
  *
@@ -49,6 +50,19 @@ public class CalculadoraTest {
         int expResult = 10;
         int result = instance.add(value1, value2);
         assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testWithMock() {
+        System.out.println("addWithMock");
+        int value1 = 5;
+        int value2 = 5;
+        int expected = 10;
+        Calculadora instance = Mockito.mock(Calculadora.class);
+        Mockito.when(instance.add(value1, value2)).thenReturn(expected);
+        int result = instance.add(value1, value2);
+        
+        assertEquals(expected, result);
     }
     
 }
